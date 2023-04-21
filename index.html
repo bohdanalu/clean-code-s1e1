@@ -24,59 +24,55 @@
       </a>
     </div>
     <section class="main-page__wrapper">
-      <div id="add">
-        <label class="title" for="new-task">Add Item</label>
-        <div class="add__task-wrapper">
-          <input id="new-task" class="add__task task" type="text" />
-          <button>Add</button>
+      <div class="add__item" id="add">
+        <label class="item__label title" for="new-task">Add Item</label>
+        <div class="item__task-wrapper">
+          <input
+            class="item__task item__task--text"
+            id="new-task"
+            type="text"
+          />
+          <button class="item__btn">Add</button>
         </div>
       </div>
       <h3 class="title">2Todo</h3>
       <ul id="incomplete-task" class="incomplete">
-        <li class="incomplete__item">
-          <input class="incomplete__input" type="checkbox" />
-          <label class="incomplete__label task">Pay Bills</label>
-          <input class="incomplete__input task" type="text" />
-          <button class="incomplete__btn edit">Edit</button>
-          <button class="incomplete__btn delete">
-            <img
-              class="incomplete__img"
-              src="./remove.svg"
-              alt="button remove"
-            />
+        <li class="incomplete__item item">
+          <input class="item__input item__input--check" type="checkbox" />
+          <label class="item__label task">Pay Bills</label>
+          <input class="item__task item__task--text" type="text" />
+          <button class="item__btn item__btn--edit">Edit</button>
+          <button class="item__btn item__btn--delete">
+            <img class="item__img" src="./remove.svg" alt="button remove" />
           </button>
         </li>
-        <li class="incomplete__item edit-mode">
-          <input class="incomplete__input" type="checkbox" />
-          <label class="inxcomplete__label task">Go Shopping</label>
+        <li class="incomplete__item item edit-mode">
+          <input class="item__input item__input--check" type="checkbox" />
+          <label class="item__label task">Go Shopping</label>
           <input
-            class="incomplete__input task"
+            class="item__task item__task--text"
             type="text"
             value="Go Shopping"
           />
-          <button class="incomplete__btn edit">Save</button>
-          <button class="incomplete__btn delete">
-            <img
-              class="incomplete__img"
-              src="./remove.svg"
-              alt="button remove"
-            />
+          <button class="item__btn item__btn--edit">Save</button>
+          <button class="item__btn item__btn--delete">
+            <img class="item__img" src="./remove.svg" alt="button remove" />
           </button>
         </li>
       </ul>
       <h3 class="title">Completed</h3>
       <ul class="completed" id="completed-tasks">
-        <li class="completed__item">
-          <input class="completed__input" type="checkbox" checked />
-          <label class="completed__label task">See the Doctor</label>
-          <input type="completed__input text" class="task" />
-          <button class="completed__btn edit">Edit</button>
-          <button class="completed__btn delete">
-            <img
-              class="completed__img"
-              src="./remove.svg"
-              alt="button remove"
-            />
+        <li class="completed__item item">
+          <input
+            class="item__input item__input--check"
+            type="checkbox"
+            checked
+          />
+          <label class="item__label task">See the Doctor</label>
+          <input type="text" class="item__task item__task--text" />
+          <button class="item__btn item__btn--edit">Edit</button>
+          <button class="item__btn item__btn--delete">
+            <img class="item__img" src="./remove.svg" alt="button remove" />
           </button>
         </li>
       </ul>
